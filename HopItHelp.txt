@@ -1,0 +1,24 @@
+ssh-keygen -t rsa
+
+cat ~.ssh/id_rsa.pub #copy the public key to github to let github know you
+
+ssh -vT git@github.com #check github know you no not
+
+ssl client will ask you the passphrase to unlock file in ~/.ssh/id_rsa for talk to github ssl server 
+
+#go to user project
+
+git init
+
+git remote set-url origin  git@github.com:FTBSystem/HowToUseGithibRemotely.git
+
+git add <your file name>
+git commit -m "<commit note>"
+git branch -M main
+
+git push -u origin main # it need ~/.ssh/id_rsa to work. So enter the passphrase
+
+
+#empty folder won't work
+#use .gitXXXX make fake empty folder
+#Or use JFP (close source project)
