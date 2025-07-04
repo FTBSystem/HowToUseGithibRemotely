@@ -2,7 +2,7 @@ ssh-keygen -t rsa
 
 cat ~.ssh/id_rsa.pub #copy the public key to github to let github know you
 
-ssh -vT git@github.com #check github know you no not
+ssh -vT git@github.com #check github really know you no not
 
 ssl client will ask you the passphrase to unlock file in ~/.ssh/id_rsa for talk to github ssl server 
 
