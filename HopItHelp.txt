@@ -6,7 +6,7 @@ ssh -vT git@github.com #check github really know you
 
 #ssl client will ask you the passphrase to unlock file in ~/.ssh/id_rsa for talk to github ssl server 
 
-#go to your project # cd /home/<user>/XXXXX/XXXXX/XXXXXX or /XXXXX or any any path
+#go to your project # cd /home/<user>/XXXXX/XXXXX/XXXXXX or /XXXXX or any path
 
 git init
 
