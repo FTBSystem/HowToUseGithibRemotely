@@ -2,15 +2,17 @@ ssh-keygen -t rsa
 
 cat ~/.ssh/id_rsa.pub #copy the public key to github to let github know you
 
-ssh -vT git@github.com #check github really know you
+ssh -vT git@github.com #check github know you no not
 
-#ssl client will ask you the passphrase to unlock file in ~/.ssh/id_rsa for talk to github ssl server 
+ssl client will ask you the passphrase to unlock file in ~/.ssh/id_rsa for talk to github ssl server 
 
-#go to your project # cd /home/<user>/XXXXX/XXXXX/XXXXXX or /XXXXX or any path
+#go to user project
 
 git init
 
 git remote set-url origin  git@github.com:<username>/<project>.git
+
+#git remote add origin git@github.com:<username>/<project>.git
 
 git add <your file name>
 git commit -m "<commit note>"
