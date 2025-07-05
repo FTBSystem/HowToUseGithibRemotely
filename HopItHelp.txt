@@ -1,6 +1,6 @@
 ssh-keygen -t rsa
 
-cat ~.ssh/id_rsa.pub #copy the public key to github to let github know you
+cat ~/.ssh/id_rsa.pub #copy the public key to github to let github know you
 
 ssh -vT git@github.com #check github really know you
 
